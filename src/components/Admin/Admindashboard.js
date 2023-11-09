@@ -20,11 +20,7 @@ function Admindashboard() {
       }}
     >
      <div className='admin-dashboard'>
-        <h1 className='admin-dashboard-title' 
-      style={{
-text-align:'center',
-      }}
-      >MAIN MENU</h1>
+        <h1 className='admin-dashboard-title'>MAIN MENU</h1>
           <div className='admin-dashboard-buttons'>
             <div className='admin-dashboard-buttons-row'>
               <button className='admin-dashboard-button'>
