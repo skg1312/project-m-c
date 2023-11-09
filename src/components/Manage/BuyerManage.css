@@ -38,6 +38,7 @@
   }
   
   .buyer-manage-data-table-body {
+    margin-left:25px;
     color: #767676;
     font-family: Inter;
     font-size: 20px;
