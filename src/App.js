@@ -49,7 +49,7 @@ function App() {
       <hr />
       <hr />
       <h1 style={{ textAlign: 'center' }}>Invoice</h1>
-      <p style={{ textAlign: 'center' }}>Not connected to the backend</p>
+      <p style={{ textAlign: 'center', color:'red'}}>Not connected to the backend</p>
       <AdminCreateInvoice />
     </div>
   );
