@@ -32,7 +32,7 @@ function BuyerManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/buyer') // Use the appropriate API endpoint for buyers
+      .get('https://octopus-app-2s9og.ondigitalocean.app/buyer') // Use the appropriate API endpoint for buyers
       .then((response) => {
         setBuyers(response.data);
       })
@@ -53,7 +53,7 @@ function BuyerManage() {
     if (selectedBuyerId) {
       // Update an existing buyer
       axios
-        .put(`http://localhost:5000/buyer/${selectedBuyerId}`, selectedBuyerData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/buyer/${selectedBuyerId}`, selectedBuyerData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('Buyer updated successfully:', response.data);
@@ -68,7 +68,7 @@ function BuyerManage() {
     } else {
       // Create a new buyer
       axios
-        .post('http://localhost:5000/buyer', selectedBuyerData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/buyer', selectedBuyerData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('Buyer created successfully:', response.data);
