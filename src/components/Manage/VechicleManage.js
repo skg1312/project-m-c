@@ -35,7 +35,7 @@ function VechicleManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/vechicle')
+      .get('https://octopus-app-2s9og.ondigitalocean.app/vechicle')
       .then((response) => {
         setVechicle(response.data);
       })
@@ -56,7 +56,7 @@ function VechicleManage() {
     if (selectedVechicleId) {
       // Update an existing vehicle
       axios
-        .put(`http://localhost:5000/vechicle/${selectedVechicleId}`, selectedVechicleData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/vechicle/${selectedVechicleId}`, selectedVechicleData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('Vehicle updated successfully:', response.data);
@@ -71,7 +71,7 @@ function VechicleManage() {
     } else {
       // Create a new vehicle
       axios
-        .post('http://localhost:5000/vechicle', selectedVechicleData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/vechicle', selectedVechicleData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('Vehicle created successfully:', response.data);
