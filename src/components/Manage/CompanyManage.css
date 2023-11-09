@@ -133,6 +133,7 @@
     letter-spacing: -0.289px;
 }
 .company-manager-form-input-low{
+    margin-left: 50px;
     border-radius: 6px;
     border: 1px solid #ededed;
     background: #EDEDED;
@@ -167,7 +168,7 @@
     background: var(--color-primary-1, #5925DC);
     margin-bottom: 20px;
     margin-top: 20px;
-      margin-left: 200px;
+      margin-left: 250px;
   }
   .highlight{
     color: green !important;
