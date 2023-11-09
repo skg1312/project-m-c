@@ -84,6 +84,7 @@
     color: green !important;
 }
   .buyer-manage-form-input {
+    margin-left: 100px;
     border-radius: 6px;
     border: 1px solid #ededed;
     background: #EDEDED;
