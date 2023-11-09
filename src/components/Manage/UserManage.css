@@ -83,6 +83,7 @@
     background-color: #5925DC;
     margin: 5px;
   }.user-manage-form-input-checkbox{
+      margin-left: 50px;
     width: 16px;
     height: 16px;
 }
@@ -112,7 +113,7 @@
   }
   
   .user-manage-form {
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
@@ -132,6 +133,7 @@
   }
   
   .user-manage-form-input {
+      margin-left: 50px;
     border-radius: 6px;
     border: 1px solid #ededed;
     background: #EDEDED;
@@ -165,5 +167,6 @@
     background: var(--color-primary-1, #5925DC);
     margin-bottom: 20px;
     margin-top: 20px;
+      margin-left: 200px;
   }
   
