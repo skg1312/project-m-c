@@ -6,6 +6,7 @@
     font-weight: 600;
     line-height: 62px;
     letter-spacing: -0.939px;
+    text-align:center;
 }
 .admin-dashboard-buttons-row{
     display: grid;
