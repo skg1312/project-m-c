@@ -97,7 +97,7 @@
   }
   
   .company-manager-form {
-    margin-left: 50px;
+    margin-left: 100px;
     margin-top: 100px;
     margin-right: 100px;
     margin-bottom: 100px;
@@ -117,7 +117,7 @@
   }
   
   .company-manager-form-input-high{
-    margin-left: 50px;
+    margin-left: 25px;
     border-radius: 6px;
     border: 1px solid #ededed;
     background: #EDEDED;
@@ -133,7 +133,6 @@
     letter-spacing: -0.289px;
 }
 .company-manager-form-input-low{
-    margin-left: 50px;
     border-radius: 6px;
     border: 1px solid #ededed;
     background: #EDEDED;
