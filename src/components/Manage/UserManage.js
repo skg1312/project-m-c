@@ -33,7 +33,7 @@ function UserManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/user')
+      .get('https://octopus-app-2s9og.ondigitalocean.app/user')
       .then((response) => {
         setUsers(response.data);
       })
@@ -54,7 +54,7 @@ function UserManage() {
     if (selectedUserId) {
       // Update an existing user
       axios
-        .put(`http://localhost:5000/user/${selectedUserId}`, selectedUserData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/user/${selectedUserId}`, selectedUserData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('User updated successfully:', response.data);
@@ -69,7 +69,7 @@ function UserManage() {
     } else {
       // Create a new user
       axios
-        .post('http://localhost:5000/user', selectedUserData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/user', selectedUserData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('User created successfully:', response.data);
