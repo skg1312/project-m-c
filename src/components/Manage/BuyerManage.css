@@ -84,7 +84,7 @@
     color: green !important;
 }
   .buyer-manage-form-input {
-    margin-left: 100px;
+    margin-left: 50px;
     border-radius: 6px;
     border: 1px solid #ededed;
     background: #EDEDED;
@@ -101,6 +101,7 @@
   }
   
   .buyer-manage-form-button {
+      
     color: #FEFEFE;
     text-align: center;
     font-feature-settings: 'clig' off, 'liga' off;
@@ -118,9 +119,11 @@
     background: #5925DC;
     margin-bottom: 20px;
     margin-top: 20px;
+    margin-left: 150px;
   }
   
   .buyer-manage-form-input-checkbox {
+    margin-left: 50px;
     width: 16px;
     height: 16px;
   }
