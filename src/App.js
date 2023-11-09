@@ -1,31 +1,56 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import BrowserRouter
-import SuperAdminLogin from './components/SuperAdmin_login';
-import UserLogin from './components/User_login';
-import StaffLogin from './components/Staff_login';
-import UserCompanyDetails from './components/User_Company_details';
-import UserSellersDetails from './components/User_Sellers_details';
-import UserBuyersDetails from './components/User_Buyers_details';
-import UserConsignmentDetails from './components/User_Consignment_details';
-import UserCustomerDetails from './components/User_Customer_details';
-import UserItemList from './components/User_Item_List';
+import AdminCreateInvoice from './components/Admin/AdminCreateInvoice';
+import Admindashboard from './components/Admin/Admindashboard';
+import StaffDashboard from './components/Staff/Staffdashboard';
+import UserDashboard from './components/User/Userdashboard';
+import BuyerManage from './components/Manage/BuyerManage';
+import SellerManage from './components/Manage/SellerManage';
+import VechicleManage from './components/Manage/VechicleManage';
+import CompanyManage from './components/Manage/CompanyManage';
+import ConsignmentManage from './components/Manage/ConsignmentManage';
+import UserManage from './components/Manage/UserManage';
+import StaffManage from './components/Manage/StaffManage';
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route path='/' element={<UserItemList />} />
-          <Route path='/customer' element={<UserCustomerDetails />} />
-          <Route path='/consignment' element={<UserConsignmentDetails />} />
-          <Route path='/buyers' element={<UserBuyersDetails />} />
-          <Route path='/sellers' element={<UserSellersDetails />} />
-          <Route path='/company' element={<UserCompanyDetails />} />
-          <Route path='/admin/*' element={<SuperAdminLogin />} />
-          <Route path='/user/*' element={<UserLogin />} />
-          <Route path='/staff/*' element={<StaffLogin />} />
-        </Routes>
-      </Router>
+      <h1 style={{ textAlign: 'center' }}>Dashboard</h1>
+      <h2 style={{ textAlign: 'center' }}>Admin dashboard</h2>
+      <Admindashboard />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>Staff dashboard</h2>
+      <StaffDashboard />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>User dashboard</h2>
+      <UserDashboard />
+      <hr />
+      <hr />
+      <h1 style={{ textAlign: 'center' }}>Manage</h1>
+      <h2 style={{ textAlign: 'center' }}>Buyer Manage</h2>
+      <BuyerManage />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>Seller Manage</h2>
+      <SellerManage />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>Vechicle Manage</h2>
+      <VechicleManage />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>Company Manage</h2>
+      <CompanyManage />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>Consignment Manage</h2>
+      <ConsignmentManage />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>User Manage</h2>
+      <UserManage />
+      <hr />
+      <h2 style={{ textAlign: 'center' }}>Staff Manage </h2>
+      <StaffManage />
+      <hr />
+      <hr />
+      <h1 style={{ textAlign: 'center' }}>Invoice</h1>
+      <p style={{ textAlign: 'center' }}>Not connected to the backend</p>
+      <AdminCreateInvoice />
     </div>
   );
 }
