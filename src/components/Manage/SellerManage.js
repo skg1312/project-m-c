@@ -32,7 +32,7 @@ function SellerManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/seller')
+      .get('https://octopus-app-2s9og.ondigitalocean.app/seller')
       .then((response) => {
         setSellers(response.data);
       })
@@ -53,7 +53,7 @@ function SellerManage() {
     if (selectedSellerId) {
       // Update an existing seller
       axios
-        .put(`http://localhost:5000/seller/${selectedSellerId}`, selectedSellerData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/seller/${selectedSellerId}`, selectedSellerData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('Seller updated successfully:', response.data);
@@ -68,7 +68,7 @@ function SellerManage() {
     } else {
       // Create a new seller
       axios
-        .post('http://localhost:5000/seller', selectedSellerData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/seller', selectedSellerData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('Seller created successfully:', response.data);
