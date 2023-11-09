@@ -23,7 +23,7 @@ function ConsignmentManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/consignment')
+      .get('https://octopus-app-2s9og.ondigitalocean.app/consignment')
       .then((response) => {
         setConsignedItems(response.data);
       })
@@ -52,7 +52,7 @@ function ConsignmentManage() {
     if (selectedConsignmentId) {
       // Update an existing consignment
       axios
-        .put(`http://localhost:5000/consignment/${selectedConsignmentId}`, selectedConsignmentData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/consignment/${selectedConsignmentId}`, selectedConsignmentData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('Consignment updated successfully:', response.data);
@@ -69,7 +69,7 @@ function ConsignmentManage() {
     } else {
       // Create a new consignment
       axios
-        .post('http://localhost:5000/consignment', selectedConsignmentData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/consignment', selectedConsignmentData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('Consignment created successfully:', response.data);
