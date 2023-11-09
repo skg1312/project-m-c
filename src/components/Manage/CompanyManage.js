@@ -35,7 +35,7 @@ function CompanyManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/company')
+      .get('https://octopus-app-2s9og.ondigitalocean.app/company')
       .then((response) => {
         setCompanies(response.data);
         console.log(response.data);
@@ -57,7 +57,7 @@ function CompanyManage() {
     if (selectedCompanyId) {
       // Update an existing company
       axios
-        .put(`http://localhost:5000/company/${selectedCompanyId}`, selectedCompanyData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/company/${selectedCompanyId}`, selectedCompanyData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('Company updated successfully:', response.data);
@@ -74,7 +74,7 @@ function CompanyManage() {
     } else {
       // Create a new company
       axios
-        .post('http://localhost:5000/company', selectedCompanyData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/company', selectedCompanyData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('Company created successfully:', response.data);
