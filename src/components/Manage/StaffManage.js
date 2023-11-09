@@ -32,7 +32,7 @@ function StaffManage() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/staff')
+      .get('https://octopus-app-2s9og.ondigitalocean.app/staff')
       .then((response) => {
         setStaffMembers(response.data);
       })
@@ -53,7 +53,7 @@ function StaffManage() {
     if (selectedStaffId) {
       // Update an existing staff member
       axios
-        .put(`http://localhost:5000/staff/${selectedStaffId}`, selectedStaffData)
+        .put(`https://octopus-app-2s9og.ondigitalocean.app/staff/${selectedStaffId}`, selectedStaffData)
         .then((response) => {
           // Handle successful update (if needed)
           console.log('Staff member updated successfully:', response.data);
@@ -68,7 +68,7 @@ function StaffManage() {
     } else {
       // Create a new staff member
       axios
-        .post('http://localhost:5000/staff', selectedStaffData)
+        .post('https://octopus-app-2s9og.ondigitalocean.app/staff', selectedStaffData)
         .then((response) => {
           // Handle successful creation (if needed)
           console.log('Staff member created successfully:', response.data);
