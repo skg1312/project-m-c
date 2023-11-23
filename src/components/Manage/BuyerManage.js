@@ -205,7 +205,7 @@ function BuyerManage() {
           <input type='checkbox' required className='buyer-manage-form-input-checkbox' />
           <label className='buyer-manage-form-input-checkbox-label'>
             By creating an account, you agree with Terms and Conditions & Privacy Policy
-          </label>
+          </label><br />
           <button type='submit' className='buyer-manage-form-button'>
             {selectedBuyerId ? 'Update' : 'Add'}
           </button>

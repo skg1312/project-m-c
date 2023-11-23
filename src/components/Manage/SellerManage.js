@@ -206,7 +206,7 @@ function SellerManage() {
             />
              <br />
             <input type='checkbox' required className='vechicle-manage-form-input-checkbox' />
-            <label className='vechicle-manage-form-input-checkbox-label'>
+            <label className='seller-manage-form-input-checkbox-label'>
               By creating an account, you agree with Terms and Conditions & Privacy Policy
             </label>
             <button type='submit' className='seller-manage-form-button'>
