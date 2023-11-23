@@ -1,7 +1,11 @@
 /* seller-manage component styles */
-.seller-manage {
+/* .seller-manage {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  } */
+  .seller-manage {
+    display: flex;
+    flex-direction: row;
   }
   
   .seller-manage-data {
@@ -169,4 +173,43 @@
 .pagination-container .disabled{
     color: #ada9a9;
     cursor: not-allowed;
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 768px) {
+  .seller-manage {
+    display: flex;
+    flex-direction: column;
+  }
+  .seller-manage-data,
+  .seller-manage-form {
+    margin: 50px;
+    width: 100%;
+  }
+
+  .seller-manage-data {
+    margin-right: 0; /* Reset margin for tablets */
+  }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .seller-manage {
+    display: flex;
+    flex-direction: column;
+  }
+  .seller-manage-data,
+  .seller-manage-form {
+    margin: 50px;
+    width: 100%;
+  }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1025px) {
+  .seller-manage-data,
+  .seller-manage-form {
+    margin: 100px 50px;
+    width: 100%;
+  }
 }

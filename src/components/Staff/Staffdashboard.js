@@ -32,29 +32,27 @@ function StaffDashboard() {
               <button className='staff-dashboard-button'>
                 <img src={ms} alt='ms' className='staff-dashboard-button-icon' />
                 MANAGE BUYERS
-                </button>
-                <button className='staff-dashboard-button'>
+              </button>
+              <button className='staff-dashboard-button'>
                 <img src={ms} alt='ms' className='staff-dashboard-button-icon' />
                 MANAGE COMPANY
-                </button>
-            </div>
-            <div className='staff-dashboard-buttons-row'>
+              </button>
               <button className='staff-dashboard-button'>
                 <img src={mv} alt='mv' className='staff-dashboard-button-icon' />
                 MANAGE VECHICLES
-                </button>
+              </button>
               <button className='staff-dashboard-button'>
-                <img src={mi} alt='mi' className='staff-dashboard-button-icon' />
-                MANAGE INVOICE
-                </button>
+                  <img src={mi} alt='mi' className='staff-dashboard-button-icon' />
+                  MANAGE INVOICE
+              </button>
               <button className='staff-dashboard-button'>
                 <img src={mc} alt='mc' className='staff-dashboard-button-icon' />
                 MANAGE CLIENT
-                </button>
-                <button className='staff-dashboard-button'>
+              </button>
+              <button className='staff-dashboard-button'>
                 <img src={mc} alt='mc' className='staff-dashboard-button-icon' />
                 MANAGE CONSIGNMENT
-                </button>
+              </button>
             </div>
           </div>
         </div>
