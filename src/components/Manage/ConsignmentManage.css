@@ -1,7 +1,7 @@
 /* consignment-manage component styles */
 .consignment-manage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .consignment-manage-data {
@@ -169,4 +169,43 @@
 .pagination-container .disabled{
   color: #ada9a9;
   cursor: not-allowed;
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 768px) {
+  .consignment-manage {
+    display: flex;
+    flex-direction: column;
+  }
+  .consignment-manage-data,
+  .consignment-manage-form {
+    margin: 50px;
+    width: 100%;
+  }
+
+  .consignment-manage-data {
+    margin-right: 0; /* Reset margin for tablets */
+  }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .consignment-manage {
+    display: flex;
+    flex-direction: column;
+  }
+  .consignment-manage-data,
+  .consignment-manage-form {
+    margin: 50px;
+    width: 100%;
+  }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1025px) {
+  .consignment-manage-data,
+  .consignment-manage-form {
+    margin: 100px 50px;
+    width: 100%;
+  }
 }

@@ -1,7 +1,7 @@
 /* company-manager component styles */
 .company-manager {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   }
   
   .company-manager-data {
@@ -186,4 +186,43 @@
     font-weight: 400;
     line-height: 26px;
     letter-spacing: -0.289px;
-}  
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 768px) {
+  .company-manager {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-manager-data,
+  .company-manager-form {
+    margin: 50px;
+    width: 100%;
+  }
+
+  .company-manager-data {
+    margin-right: 0; /* Reset margin for tablets */
+  }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .company-manager {
+    display: flex;
+    flex-direction: column;
+  }
+  .company-manager-data,
+  .company-manager-form {
+    margin: 50px;
+    width: 100%;
+  }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1025px) {
+  .company-manager-data,
+  .company-manager-form {
+    margin: 100px 50px;
+    width: 100%;
+  }
+}

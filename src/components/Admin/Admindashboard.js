@@ -34,35 +34,31 @@ function Admindashboard() {
               <button className='admin-dashboard-button'>
                 <img src={mi} alt='ms' className='admin-dashboard-button-icon' />
                 MANAGE INVOICE
-                </button>
-            </div>
-            <div className='admin-dashboard-buttons-row'>
+              </button>
               <button className='admin-dashboard-button'>
                 <img src={vs} alt='' className='admin-dashboard-button-icon' />
                 MANAGE VECHICLES
-                </button>
+              </button>
               <button className='admin-dashboard-button'>
                 <img src={mc} alt='mc' className='admin-dashboard-button-icon' />
                 MANAGE CLIENT
-                </button> 
-                <button className='admin-dashboard-button'>
+              </button> 
+              <button className='admin-dashboard-button'>
                 <img src={mu} alt='mi' className='admin-dashboard-button-icon' />
                 MANAGE STAFF
-                </button>
-            </div>
-            <div className='admin-dashboard-buttons-row'>
+              </button>
               <button className='admin-dashboard-button'>
                 <img src={mv} alt='mv' className='admin-dashboard-button-icon' />
                 MANAGE SELLERS
-                </button>
+              </button>
               <button className='admin-dashboard-button'>
                 <img src={ms} alt='mi' className='admin-dashboard-button-icon' />
                 MANAGE BUYERS
-                </button>
+              </button>
               <button className='admin-dashboard-button'>
                 <img src={ad} alt='mc' className='admin-dashboard-button-icon' />
                 MANAGE CONSIGNMENT
-                </button>
+              </button>
             </div>
           </div>
         </div>

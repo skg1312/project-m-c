@@ -36,3 +36,24 @@
     padding-right: 120px;
     padding-bottom: 30px;
 }
+
+/* Tablet styles - 1600px width and below */
+@media only screen and (max-width: 1600px) {
+    .staff-dashboard-buttons-row {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Mobile styles - 1200px width and below */
+@media only screen and (max-width: 1200px) {
+    .staff-dashboard-buttons-row {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Mobile styles - 768px width and below */
+@media only screen and (max-width: 768px) {
+    .staff-dashboard-buttons-row {
+        grid-template-columns: 1fr;
+    }
+}

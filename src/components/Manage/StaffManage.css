@@ -1,7 +1,7 @@
 /* staff-manager component styles */
 .staff-manager {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
   }
   
   .staff-manager-data {
@@ -170,4 +170,43 @@
 }
 .highlight{
     color: green !important;
+}
+
+/* Styles for tablets */
+@media only screen and (max-width: 768px) {
+  .staff-manager {
+    display: flex;
+    flex-direction: column;
+  }
+  .staff-manager-data,
+  .staff-manager-form {
+    margin: 50px;
+    width: 100%;
+  }
+
+  .staff-manager-data {
+    margin-right: 0; /* Reset margin for tablets */
+  }
+}
+
+/* Styles for laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .staff-manager {
+    display: flex;
+    flex-direction: column;
+  }
+  .staff-manager-data,
+  .staff-manager-form {
+    margin: 50px;
+    width: 100%;
+  }
+}
+
+/* Styles for desktops */
+@media only screen and (min-width: 1025px) {
+  .staff-manager-data,
+  .staff-manager-form {
+    margin: 100px 50px;
+    width: 100%;
+  }
 }
