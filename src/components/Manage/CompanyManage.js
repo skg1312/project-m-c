@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './CompanyManage.css';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
+import background from '../images/Desktop.png';
 
 function CompanyManage() {
   const [companies, setCompanies] = useState([]);
@@ -103,6 +104,14 @@ function CompanyManage() {
   };
 
   return (
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+      }}
+    >
     <div className='company-manager'>
       <div className='company-manager-data'>
         <h1 className='company-manager-data-title'>ALL COMPANIES</h1>
@@ -280,6 +289,7 @@ function CompanyManage() {
 </form>
 
       </div> 
+    </div>
     </div>
   );
 }
