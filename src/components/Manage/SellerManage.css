@@ -1,8 +1,4 @@
 /* seller-manage component styles */
-/* .seller-manage {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
   .seller-manage {
     display: flex;
     flex-direction: row;
