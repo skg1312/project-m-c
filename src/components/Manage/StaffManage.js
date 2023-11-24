@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './StaffManage.css';
 import axios from 'axios';
 import ReactPaginate from 'react-paginate';
+import background from '../images/Desktop.png';
 
 function StaffManage() {
   const [staffMembers, setStaffMembers] = useState([]);
@@ -94,6 +95,14 @@ function StaffManage() {
   };
 
   return (
+    <div
+      style={{
+        backgroundImage: `url(${background})`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+        minHeight: '100vh',
+      }}
+    >
     <div className='staff-manager'>
       <div className='staff-manager-data'>
         <h1 className='staff-manager-data-title'>ALL STAFF MEMBERS</h1>
@@ -220,6 +229,7 @@ function StaffManage() {
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 }
